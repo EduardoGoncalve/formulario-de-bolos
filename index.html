@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Carro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <div class="header">
+            <h3>Peça seu bolo da maneia mais facil !</h3>
+
+        </div>
+        <div class="form_conteiner">
+            <div class="form_header">
+                <p>Faça seu pedido
+            </div>
+            <div class="form_body">
+                 <h1 class="form-title" >Peça ja</h1>
+                 <p>Complete o formulario e selecione as opções desejadas</p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Nome <span class="required-field">*</span></label>
+                        <input 
+                        type="text"
+                        name="title" 
+                        id="title" 
+                        class="block" 
+                        placeholder="Digite seu nome"
+                        minlength="1"
+                        maxlength="30"
+                        required>
+                     </div>
+                     <div class="box-input">
+                        <label for="last-name">Sobrenome <span class="required-field">*</span></label>
+                        <input 
+                        type="text"
+                        name="last-name" 
+                        id="last-name" 
+                        class="block" 
+                        placeholder="Digite o seu sobrenome"
+                        required>
+                     </div>
+                     <div class="box-input">
+                        <label for="description">Detalhes do bolo: <span class="required-field">*</span></label>
+                        <textarea
+                            name="description"
+                            id="description"
+                            class="block"
+                            placeholder="Informe detalhes de como você que seu bolo seja, exemplo: Com velas, com a foto de uma pessoa ou personagem etc."></textarea>
+                     </div>
+                     <div class="box-input">
+                        <label for="flavor">Escolha o Sabor <span class="required-field">*</span></label>
+                        <input 
+                        type="text"
+                        name="flavor"
+                        id="flavors"
+                        placeholder="Chocolate">
+                        <datalist id="flavors" >
+                            <option value="Morango"></option>
+                            <option value="Chocolate"></option>
+                            <option value="Creme"></option>
+                            <option value="Baunilha"></option>
+                        </datalist>   
+                     </div>
+                     <div class="box-input">
+                        <label for="data-de-entrega">Selecione a data de entrega<span class="required-field">*</span></label>
+                        <input 
+                        type="date"
+                        name="data-de-entrega" 
+                        id="data-de-entrega"
+                        class="block" 
+                        required>
+                     </div>
+                     <div class="box-input">
+                        <p>Quantas camadas? <span class="required-field">*</span></p>
+                        <input type="radio" id="umacamada" name="cake">
+                        <label for="umacamada">Uma Camada</label>
+                        <input type="radio" id="duascamadas" name="cake">
+                        <label for="duascamadas">Duas Camadas</label>
+                     </div>
+                     <div class="optional-box">
+                        <p>Selecione os ingredientes adicionais</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                id="chantilly" 
+                                name="optional[]" 
+                                value="chantilly">
+                                <label for="chantilly">Chantilly - R$ **,**</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox"
+                                id="morango"
+                                name="optional[]"
+                                value="morango">
+                                <label for="morango">Morango - R$ **,**</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                id="cereja" 
+                                name="optional[]" 
+                                value="cereja">
+                                <label for="cereja">Cereja - R$ **,**</label>
+                            </li>
+                        </ul>
+                     </div>
+                     <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                id="nutella" 
+                                name="optional[]" 
+                                value="nutella">
+                                <label for="nutella">Nutella R$ **,**</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox"
+                                id="coco-ralado"
+                                name="optional[]"
+                                value="coco-ralado">
+                                <label for="coco-ralado">Coco Ralado - R$ **,**</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                id="doce-de-leite" 
+                                name="optional[]" 
+                                value="doce-de-leite">
+                                <label for="doce-de-leite">Doce de leite - R$ **,**</label>
+                            </li>
+                        </ul>
+                     </div>
+                     <div class="box-input">
+                        <p>fotos de inspiração:</p>
+                        <input 
+                        type="file" 
+                        multiple accept="image/jpg, image/png" 
+                        id="images" 
+                        name="images" 
+                        required>
+                     </div>
+                     <input type="submit" value="Enviar" class="btn-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
